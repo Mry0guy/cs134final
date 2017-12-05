@@ -6,6 +6,8 @@ const buttons = [
 	<Button name="Resume" link="/Resume" />,
 	<Button name="Contact Me" link="/Contact" />,
 	<Button name="User Reviews" link="/Reviews" />,
+	<Button name="Recomendations" link="/Recomendations" />,
+	<Button name="Photos" link="/Photos"/>,
 	<Button name="Github" link="/Github" />
 ]
 

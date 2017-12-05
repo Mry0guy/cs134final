@@ -7,6 +7,8 @@ import App from './app';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Reviews from './components/Reviews'
+import Recomendations from './components/Recomendations'
+import Photos from './components/Photos'
 import 'styles/index.scss';
 
 export default class Routes extends React.Component {
@@ -18,7 +20,9 @@ export default class Routes extends React.Component {
 					<Route path="/Resume" component={Resume} />
 					<Route path="/Contact" component={Contact} />
 					<Route path="/Reviews" component={Reviews} />
-					<Route path="/Github" component={() => { window.location = 'https://github.com/Mry0guy' }} />
+					<Route path="/Recomendations" component={Recomendations} />
+					<Route path="/Photos" component={Photos}/>
+					<Route path="/Github" component={() => { window.location ='https://github.com/Mry0guy' }} />
 				</div>
 			</Router>
 		)
