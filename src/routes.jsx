@@ -4,8 +4,9 @@ import {
 	Route
 } from 'react-router-dom';
 import App from './app';
-import About from './components/About';
-import Sample from './components/Sample';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Reviews from './components/Reviews'
 import 'styles/index.scss';
 
 export default class Routes extends React.Component {
@@ -13,9 +14,11 @@ export default class Routes extends React.Component {
 		return (
 			<Router>
 				<div>
-					<Route exact path="/" component={App}/>
-					<Route path="/about" component={About}/>
-					<Route path="/sample" component={Sample}/>
+					<Route exact path="/" component={App} />
+					<Route path="/Resume" component={Resume} />
+					<Route path="/Contact" component={Contact} />
+					<Route path="/Reviews" component={Reviews} />
+					<Route path="/Github" component={() => { window.location = 'https://github.com/Mry0guy' }} />
 				</div>
 			</Router>
 		)

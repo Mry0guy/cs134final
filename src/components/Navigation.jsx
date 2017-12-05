@@ -1,15 +1,26 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import Button from './Button'
+
+const buttons = [
+	<Button name="Home" link="/" />,
+	<Button name="Resume" link="/Resume" />,
+	<Button name="Contact Me" link="/Contact" />,
+	<Button name="User Reviews" link="/Reviews" />,
+	<Button name="Github" link="/Github" />
+]
 
 export default class Navigation extends React.Component {
 	render() {
 		return (
 			<div>
-				<ul>
-					<li><Link to="/">Home</Link></li>
-					<li><Link to="/about">About</Link></li>
-					<li><Link to="/sample">Sample</Link></li>
-				</ul>
+				<div className="menuBar">
+					{buttons.map((e) => { return (e) })}
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
 			</div>
 		)
 	}
